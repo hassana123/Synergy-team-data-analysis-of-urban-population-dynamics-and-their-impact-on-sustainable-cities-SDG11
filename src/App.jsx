@@ -11,8 +11,8 @@ import { KPI, RISK_DIST, URBAN_DIST, POP_CAT, TOP_PRESSURE, TOP_DENSITY,
 import { AnimNum, HBar, Donut, KpiCard, Card, Insight } from './components/ui.jsx'
 import ScatterPlot from './components/ScatterPlot.jsx'
 import DataTable   from './components/DataTable.jsx'
-
-const TABS = ['Overview', 'Pressure & Density', 'Migration', 'Population', 'Data Table']
+import FullDataPreview from './components/FullDataPreview.jsx'
+const TABS = ['Overview', 'Pressure & Density', 'Migration', 'Population', 'Data Table', 'Full Dataset']
 
 export default function App() {
   // ── Theme — the fix is inside useTheme (adds 'dark' to <html>) ──────────────
@@ -294,6 +294,9 @@ export default function App() {
             <DataTable />
           </Card>
         )}
+        {tab === 'Full Dataset' && (
+  <FullDataPreview />
+)}
 
         {/* ── FOOTER ────────────────────────────────────────────────────────── */}
         <footer className="pt-4 border-t border-gray-200 dark:border-gray-700 flex flex-col sm:flex-row justify-between items-center gap-2 text-[11px] text-gray-400">
