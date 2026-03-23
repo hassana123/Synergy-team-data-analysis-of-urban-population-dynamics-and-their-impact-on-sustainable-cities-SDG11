@@ -4,7 +4,11 @@
 
 ---
 
+## 🌐 Live Demo
+
+👉 [Live Demo](https://synergy-team-dashboard.vercel.app/)
 ## Quick Start (3 commands)
+
 
 ```bash
 # 1. Install dependencies
